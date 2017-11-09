@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guerrero.labexer3.SecondActivity">
+
+    <Button
+        android:id="@+id/btn_SharedPref"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:onClick="loadShared"
+        android:background="#90A4AE"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_InternalStore"
+        android:layout_alignStart="@+id/btn_InternalStore" />
+
+    <Button
+        android:id="@+id/btn_InternalStore"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:onClick="loadIntStore"
+        android:background="#FFAB91"
+        android:layout_below="@+id/btn_SharedPref"
+        android:layout_alignLeft="@+id/btn_InternalCache"
+        android:layout_alignStart="@+id/btn_InternalCache"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_InternalCache"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:onClick="loadIntCache"
+        android:background="#FFCC80"
+        android:layout_below="@+id/btn_InternalStore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_ExternalCache"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="External Cache"
+        android:onClick="loadExtCache"
+        android:background="#90A4AE"
+        android:layout_below="@+id/btn_InternalCache"
+        android:layout_alignLeft="@+id/btn_InternalCache"
+        android:layout_alignStart="@+id/btn_InternalCache"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_ExternalStorage"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:onClick="loadExtStorage"
+        android:background="#FFAB91"
+        android:layout_below="@+id/btn_ExternalCache"
+        android:layout_alignLeft="@+id/btn_ExternalCache"
+        android:layout_alignStart="@+id/btn_ExternalCache"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_ExternalPublic"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="External Public Storage"
+        android:onClick="loadExtPublic"
+        android:background="#FFCC80"
+        android:layout_below="@+id/btn_ExternalStorage"
+        android:layout_alignLeft="@+id/btn_ExternalStorage"
+        android:layout_alignStart="@+id/btn_ExternalStorage"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_Previous"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:onClick="prev"
+        android:background="#43A047"
+        android:layout_below="@+id/btn_ExternalPublic"
+        android:layout_alignLeft="@+id/btn_ExternalPublic"
+        android:layout_alignStart="@+id/btn_ExternalPublic"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:textSize="18dp"
+        android:textColor="#43A047"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_Previous"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
