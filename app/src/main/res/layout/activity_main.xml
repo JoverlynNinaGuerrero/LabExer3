@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:textColor="#43A047"
         android:layout_height="wrap_content"
-        android:text="Date:"
+        android:text="Data:"
         android:paddingLeft="60dp"
         android:textSize="18sp"
         android:id="@+id/textView"
@@ -20,12 +20,12 @@
         android:layout_marginTop="24dp" />
 
     <EditText
-        android:id="@+id/etDate"
+        android:id="@+id/etData"
         android:layout_width="160dp"
         android:inputType="text"
         android:layout_height="wrap_content"
         android:paddingTop="75dp"
-        android:hint="Date"
+        android:hint="Data"
         android:layout_marginLeft="17dp"
         android:layout_marginStart="17dp"
         android:layout_alignBaseline="@+id/textView"
@@ -56,8 +56,8 @@
         android:hint="Filename"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
-        android:layout_alignLeft="@+id/etDate"
-        android:layout_alignStart="@+id/etDate" />
+        android:layout_alignLeft="@+id/etData"
+        android:layout_alignStart="@+id/etData" />
 
     <Button
         android:id="@+id/btn_SharedPref"
@@ -134,7 +134,7 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:onClick="next"
+        android:onClick="nexttt"
         android:background="#43A047"
         android:layout_below="@+id/btn_ExternalPublic"
         android:layout_alignLeft="@+id/btn_ExternalPublic"
